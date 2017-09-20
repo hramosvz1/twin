@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+	
+	
+	<!-- MAIN CONTENT -->
+	<div id="content-block">
+		<div class="head-bg">
+			<div class="head-bg-img"><img src="{% static '/img/People/principal.jpg' %}"></div>
+			<div class="head-bg-content">
+				<h1>¡Asesores!</h1>
+			</div>	
+		</div>
+		<div class="container-fluid custom-container">
+			<div class="row">
+				<div class="col-md-2 left-feild">
+					<form action="./" class="input-search">
+						<input type="text" required placeholder="buscar">
+							<i class="fa fa-search"></i>
+							<input type="submit" value="">
+					</form>				
+				</div>
+				<div class="col-md-10 ">
+					<div class="for-be-dropdowns">
+
+						<div class="be-drop-down">
+							<i class="icon-worldwide"></i>
+							<span class="be-dropdown-content">Estado
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter="*"><a>Todos</a></li>
+								<li class="filter" data-filter=".category-3"><a>Chiapas</a></li>
+								<li class="filter" data-filter=".category-4"><a>Guadalajara</a></li>
+								<li class="filter" data-filter=".category-5"><a>Monterrey</a></li>
+								<li class="filter" data-filter=".category-5"><a>Ciudad de México</a></li>
+							</ul>
+						</div>
+
+						<div class="be-drop-down">
+							<i class="icon-features"></i>
+							<span class="be-dropdown-content">Ciudad
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-2"><a>Tuxtla Gutierrez</a></li>
+								<li class="filter" data-filter=".category-3"><a>Chiapa de Corzo</a></li>
+								<li class="filter" data-filter=".category-4"><a>Ocozocuautla</a></li>
+								<li class="filter" data-filter=".category-5"><a>Comitan</a></li>
+								<li class="filter" data-filter=".category-1"><a>San Cristobal</a></li>
+							</ul>
+						</div>
+						
+
+						<div class="be-drop-down">
+							<i class="icon-creative"></i>
+							<span class="be-dropdown-content">Instituto
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-4"><a>Tecnologico de Tuxtla Gutierrez</a></li>
+								<li class="filter" data-filter=".category-5"><a>UNICACH</a></li>
+								<li class="filter" data-filter=".category-1"><a>UNACH</a></li>
+							</ul>
+						</div>
+
+						<div class="be-drop-down">
+							<i class="icon-creative"></i>
+							<span class="be-dropdown-content">Especialidad
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-4"><a>Sistemas</a></li>
+								<li class="filter" data-filter=".category-5"><a>Lenguas</a></li>
+								<li class="filter" data-filter=".category-1"><a>Ciencias Basicas</a></li>
+							</ul>
+						</div>
+
+						<div class="be-drop-down">
+							<i class="icon-projects"></i>
+							<span class="be-dropdown-content"> Tema	</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-1"><a data-type="category-1">Programacion</a></li>
+								<li class="filter" data-filter=".category-2"><a data-type="category-2">Matematicas</a></li>
+								<li class="filter" data-filter=".category-3"><a data-type="category-3">Ingles</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		
+				<div class="col-md-2 col-md-pull-10 left-feild">
+					<div class="be-vidget">
+						<h3 class="letf-menu-article">
+							Lo Mas Buscado
+						</h3>
+						<div class="creative_filds_block">
+							<div class="ul">
+								<a data-filter=".category-1" class="filter">Ingles				</a>
+								<a data-filter=".category-2" class="filter">Calculo Diferencial </a>
+								<a data-filter=".category-3" class="filter">Calculo Integral	</a>
+								<a data-filter=".category-4" class="filter">Programacion en Android</a>
+								<a data-filter=".category-5" class="filter">Programacion en Ios </a>
+							</div>
+						</div>
+					</div>
+					
+					
+			</div>
+
+			<div class="container-fluid custom-container">
+			<div class="row">
+				
+				<div class="col-md-10 col-md-push-2">
+					<div id="container-mix" class="be-user-wrapper row">
+						<div  class="mix category-4 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/rico.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">17</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Fernando Rico</a>
+								<p class="be-user-info">Tecnologico de Tuxtla</p>
+								<div class="be-text-tags">							
+									<a href="/page1/">Desarrollo Grafico</a>,
+									<a href="/page1/">Ingles,</a>
+									<a href="/page1/">Matematicas</a>
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-3 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/hector.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">34</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Hector Ramos</a>
+								<p class="be-user-info">Tecnologico de Tuxtla</p>
+								<div class="be-text-tags">
+									<a href="/page1/">Desarrollo Web</a>,
+									<a href="/page1/">Desarrollo Grafico</a>,
+									<a href="/page1/">Art Director</a>		
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-2 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/william.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">42</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">William</a>
+								<p class="be-user-info">UNACH</p>
+								<div class="be-text-tags">
+										<a href="/page1/">Desarrollo Web</a>,
+										<a href="/page1/">Ingles</a>,
+										<a href="/page1/">Desarrollo Graficor</a>											
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-1 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/shanel.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">21</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Shanel Reyes</a>
+								<p class="be-user-info">UNICACH</p>
+								<div class="be-text-tags">
+										<a href="/page1/">Desarrollo Web</a>,
+										<a href="/page1/">UI/UX</a>,
+										<a href="/page1/">Desarrollo Graficor</a>
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-6 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/agus.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">19</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Agus Olivera</a>
+								<p class="be-user-info">Salaszar</p>
+								<div class="be-text-tags">
+										<a href="/page1/">Desarrollo Web</a>,
+										<a href="/page1/">Ingles</a>,
+										<a href="/page1/">Desarrollo Graficor</a>
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-5 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/susana.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">9</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Susana Perez</a>
+								<p class="be-user-info">UNACH</p>
+								<div class="be-text-tags">
+										<a href="/page1/">Arte</a>,
+										<a href="/page1/">Ilustracion</a>,
+										<a href="/page1/">Desarrollo Web</a>		
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-4 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/mandujano.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">4</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Mandujano</a>
+								<p class="be-user-info">UNICACH</p>
+								<div class="be-text-tags">
+									<a href="/page1/">Desarrollo Web</a>,
+									<a href="/page1/">UI/UX</a>,
+									<a href="/page1/">Desarrollo Grafico</a>
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-3 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/macal.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">2</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Joel Macal</a>
+								<p class="be-user-info">UNACH</p>
+								<div class="be-text-tags">
+									<a href="/page1/">Desarrollo Grafico</a>,
+									<a href="/page1/">Calculo Diderencial</a>,
+									<a href="/page1/">Desarrollo Web</a>		
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-1 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/ivan.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">20</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Ivan Robles</a>
+								<p class="be-user-info">UNICACH</p>
+								<div class="be-text-tags">
+									<a href="/page1/">UI/UX</a>,
+									<a href="/page1/">Desarrollo Web</a>,
+									<a href="/page1/">Calculo Integral</a>
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+						<div class="mix category-2 custom-column-5">
+							<div class="be-user-block style-2">
+								<a class="be-ava-user style-2" href="/page1/">
+									<img src="{% static 'img/People/paty.jpg' %}" alt=""> 
+								</a>
+								<div class="be-user-counter">
+									<div class="c_number">22</div>
+									<div class="c_text">asesorias</div>
+								</div>
+								<a href="/page1/" class="be-use-name">Paty</a>
+								<p class="be-user-info">Tecnologico de Tuxtla</p>
+								<div class="be-text-tags">
+									<a href="/page1/">Interaction Design</a>,
+									<a href="/page1/">UI/UX</a>,
+									<a href="/page1/">Desarrollo Webn</a>	
+								</div>
+								<div class="info-block">
+									<span><i class="fa fa-thumbs-o-up"></i> 360</span>
+									<span><i class="fa fa-eye"></i> 789</span>
+								</div>
+								<a class="btn color-1 size-2 hover-1">Solicitar Asesoria</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div></div>
+	
+
+	<!-- SCRIPTS	 -->
+	<script src="{% static 'script/charts.js' %}"></script>
+
+
+{% endblock %}

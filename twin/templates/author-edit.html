@@ -1,0 +1,250 @@
+
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content%}
+	<body data-spy="scroll" data-target="blog-detail-2.htmlscrollspy">
+
+	<!-- MAIN CONTENT -->
+	<div id="content-block">
+		<div class="container be-detail-container">
+			<div class="row">
+				<div class="col-xs-12 col-md-3 left-feild">
+					<div class="be-vidget back-block">
+						<a class="btn full color-1 size-1 hover-1" href="author.html"><i class="fa fa-chevron-left"></i>Regrasar a mi perfil</a>
+					</div>
+					<div class="be-vidget hidden-xs hidden-sm" id="scrollspy">
+						<h3 class="letf-menu-article">
+							Escoge una categoría
+						</h3>
+						<div class="creative_filds_block">
+							<ul class="ul nav">
+								<li class="edit-ln"><a href="#basic-information">Información básica</a></li>
+								<li class="edit-ln"><a href="#edit-password">Editar contraseña</a></li>
+								<li class="edit-ln"><a href="#on-the-web">Mis redes sociales</a></li>
+								<li class="edit-ln"><a href="#about-me">Acerca de mí</a></li>
+								<li class="edit-ln"><a href="#habil">Mis habilidades</a></li>
+								<li class="edit-ln"><a href="#interes">Mis intereses</a></li>
+								
+							</ul>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="col-xs-12 col-md-9 _editor-content_">
+					<div class="sec"  data-sec="basic-information">
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align "><h3 class="info-block-label">Información básica</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="be-change-ava">
+									<a class="be-ava-user style-2" href="blog-detail-2.html">
+										<img src="{% static 'img/ava_10.jpg' %}" alt=""> 
+									</a>
+									<a class="btn color-4 size-2 hover-7">Cambiar imagen</a>
+								</div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-group fg_icon focus-2">
+											<div class="form-label">Nombre</div>
+											<input class="form-input" type="text" value="Taylor">
+										</div>							
+									</div>
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-group focus-2">
+											<div class="form-label">Apellido</div>									
+											<input class="form-input" type="text" value="Leight">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Ocupación</div>									
+											<input class="form-input" type="text" value="UI/UX, Web Design, Art Direction">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Compañia</div>									
+											<input class="form-input" type="text" placeholder="">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-label">Estado</div>
+										<div class="be-drop-down icon-none">
+											<span class="be-dropdown-content"> United Kingdom </span>
+											<ul class="drop-down-list">
+												<li><a>USA</a></li>
+												<li><a>India</a></li>
+												<li><a>Mexica</a></li>
+												<li><a>Russia</a></li>
+												<li><a>Italy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-group focus-2">
+											<div class="form-label">Ciudad</div>									
+											<input class="form-input" type="text" value="Barnsley">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">URL de mi web</div>									
+											<input class="form-input" type="text" value="http:// www.phoenix.cool">
+										</div>								
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sec"  data-sec="edit-password">
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Contraseña</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12 col-sm-4">
+										<div class="form-group focus-2">
+											<div class="form-label">Contraseña anterior</div>									
+											<input class="form-input" type="password" placeholder="">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12 col-sm-4">
+										<div class="form-group focus-2">
+											<div class="form-label">Nueva contraseña</div>									
+											<input class="form-input" type="password" placeholder="">
+										</div>								
+									</div>
+									<div class="input-col col-xs-12 col-sm-4">
+										<div class="form-group focus-2">
+											<div class="form-label">Repetir contraseña</div>									
+											<input class="form-input" type="password" placeholder="">
+										</div>								
+									</div>
+									<div class="col-xs-12">
+										<a class="btn color-1 size-2 hover-1 btn-right">Cambiar contraseña</a>
+									</div>																
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sec" data-sec="on-the-web">
+						<div class="be-large-post m-social">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Mis redes sociales</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="social-input form-group focus-2">
+									<div class="s_icon">
+										<div class="social-bars"><i class="fa fa-bars"></i></div>
+										<a class="social-btn color-1" href="blog-detail-2.html"><i class="fa fa-facebook"></i></a>
+									</div>
+									<div class="s_input">
+										<input class="form-input" type="text" value="http:// facebook.com/">
+									</div>
+								</div>
+								<div class="social-input form-group focus-2">
+									<div class="s_icon">
+										<div class="social-bars"><i class="fa fa-bars"></i></div>
+										<a class="social-btn color-2" href="blog-detail-2.html"><i class="fa fa-twitter"></i></a>
+									</div>
+									<div class="s_input">
+										<input class="form-input" type="text" value="http:// twitter.com/">
+									</div>
+								</div>
+								<div class="social-input form-group focus-2">
+									<div class="s_icon">
+										<div class="social-bars"><i class="fa fa-bars"></i></div>
+										<a class="social-btn color-3" href="blog-detail-2.html"><i class="fa fa-google-plus"></i></a>
+									</div>
+									<div class="s_input">
+										<input class="form-input" type="text" value="http:// googleplus.com/">
+									</div>
+								</div>
+								<div class="social-input form-group focus-2">
+									<div class="s_icon">
+										<div class="social-bars"><i class="fa fa-bars"></i></div>
+										<a class="social-btn color-5" href="blog-detail-2.html"><i class="fa fa-instagram"></i></a>
+									</div>
+									<div class="s_input">
+										<input class="form-input" type="text" value="http:// instagram.com/taylor">
+									</div>
+								</div>																													
+							</div>
+						</div>
+					</div>
+
+					<div class="sec"  data-sec="about-me" >
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Acerca de mí</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Descripción</div>
+											<textarea class="form-input" required="" placeholder="Something about you"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="sec"  data-sec="habil" >
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Mis habilidades</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Descripción</div>
+											<textarea class="form-input" required="" placeholder="Something about you"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="sec"  data-sec="interes" >
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Mis intereses</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Descripción</div>
+											<textarea class="form-input" required="" placeholder="Something about you"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+
+					
+																								
+				</div>				
+			</div>
+		</div>
+	</div>
+
+</body>
+	<!-- SCRIPT	-->
+	<script src="{% static 'script/charts.js' %}"></script>
+	<script src="{% static 'script/jquery-2.1.4.min.js' %}"></script>		
+	<script src="{% static 'script/bootstrap.min.js' %}"></script>	
+	<script src="{% static 'script/idangerous.swiper.min.js' %}"></script>
+	<script src="{% static 'script/isotope.pkgd.min.js' %}"></script>	
+	<script src="{% static 'script/jquery.viewportchecker.min.js' %}"></script>	
+
+
+{% endblock %}	

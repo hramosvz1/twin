@@ -1,0 +1,122 @@
+
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content%}
+	<body data-spy="scroll" data-target="blog-detail-2.htmlscrollspy">
+
+	<!-- MAIN CONTENT -->
+	<div id="content-block">
+		<div class="container be-detail-container">
+			<div class="row">
+				<div class="col-xs-12 col-md-3 left-feild">
+					<center>
+					<div class="be-vidget back-block">
+						<a class="btn full color-1 size-1 hover-1" href="author.html"><i class="fa fa-chevron-left"></i>back to profile</a>
+					</div>
+
+					<div class="be-vidget hidden-xs hidden-sm" id="scrollspy">
+						<h3 class="letf-menu-article">
+							Categorias
+						</h3>
+						<div class="creative_filds_block">
+							<ul class="ul nav">
+								<li class="edit-ln"><a href="#basic-information">Informacion Basica</a></li>
+								<li class="edit-ln"><a href="#web-references">Participantes</a></li>
+							</ul>
+						</div>
+						<a class="btn full color-1 size-1 hover-1 add_section"><i class="fa fa-plus"></i>Agregar Unidad</a>						
+					</div>
+					</center>
+				</div>
+				<div class="col-xs-12 col-md-9 _editor-content_">
+					<div class="sec"  data-sec="basic-information">
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align "><h3 class="info-block-label">Informacion Basica</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="be-change-ava">
+									<a class="be-ava-user style-2" href="blog-detail-2.html">
+										<img src="{% static 'img/ava_10.jpg' %}" alt=""> 
+									</a>
+									<a class="btn color-4 size-2 hover-7">Imagen del Grupo</a>
+								</div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-group fg_icon focus-2">
+											<div class="form-label">Nombre del Grupo</div>
+											<input class="form-input" type="text">
+										</div>							
+									</div>
+									
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Tema del Grupo</div>									
+											<input class="form-input" type="text" >
+										</div>								
+									</div>
+									<div class="input-col col-xs-12">
+										<div class="form-group focus-2">
+											<div class="form-label">Descripcion</div>
+											<textarea class="form-input"></textarea>									
+											
+										</div>								
+									</div>
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-label">Estado</div>
+										<div class="be-drop-down icon-none">
+											<span class="be-dropdown-content"> United Kingdom </span>
+											<ul class="drop-down-list">
+												<li><a>USA</a></li>
+												<li><a>India</a></li>
+												<li><a>Mexica</a></li>
+												<li><a>Russia</a></li>
+												<li><a>Italy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="input-col col-xs-12 col-sm-6">
+										<div class="form-group focus-2">
+											<div class="form-label">Ciudad</div>									
+											<input class="form-input" type="text" value="Barnsley">
+										</div>								
+									</div>
+																
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class=" sec" data-sec="web-references">
+						<div class="be-large-post">
+							<div class="info-block style-2">
+								<div class="be-large-post-align"><h3 class="info-block-label">Participantes</h3></div>
+							</div>
+							<div class="be-large-post-align">
+								<div class="row">
+									<div class="input-col col-xs-12 col-sm-5">
+										<div class="form-group focus-2">
+											<div class="form-label">Nombre del Participante</div>									
+											<input class="form-input" type="text" placeholder="Enter title">
+										</div>								
+									</div>
+									<div class="col-xs-12 col-sm-2">								
+										<a href="blog-detail-2.html" class="btn full btn-input color-1 size-4 hover-1">Agregar</a>
+									</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+					<a class="btn full color-1 size-1 hover-1 add_section"><i class="fa fa-plus"></i>Agregar Unidad</a>																				
+				</div>				
+			</div>
+		</div>
+	</div>
+
+</body>
+	<!-- SCRIPT	-->
+	<script src="{% static 'script/charts.js' %}"></script>
+{% endblock %}	

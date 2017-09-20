@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+	
+	<!-- MAIN CONTENT -->
+	<div id="content-block" class="gallery-block">
+		<div class="head-bg">
+			<div class="head-bg-img"></div>
+			<div class="head-bg-content">
+				<h1>¡Encuentra los mejores grupos!</h1>
+			</div>	
+		</div>
+		<div class="container-fluid custom-container">
+			<div class="row">
+				<div class="col-md-2 left-feild">
+					<form action="./" class="input-search">
+						<input type="text" required placeholder="buscar">
+							<i class="fa fa-search"></i>
+							<input type="submit" value="">
+					</form>				
+				</div>
+				<div class="col-md-10 ">
+					<div class="for-be-dropdowns">
+						<div class="be-drop-down">
+							<i class="icon-projects"></i>
+							<span class="be-dropdown-content"> Estado	</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-1"><a data-type="category-1">........</a></li>
+								<li class="filter" data-filter=".category-2"><a data-type="category-2">........</a></li>
+								<li class="filter" data-filter=".category-3"><a data-type="category-3">........</a></li>
+							</ul>
+						</div>
+						<div class="be-drop-down">
+							<i class="icon-creative"></i>
+							<span class="be-dropdown-content">Universidad
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-4"><a>........</a></li>
+								<li class="filter" data-filter=".category-5"><a>........</a></li>
+								<li class="filter" data-filter=".category-1"><a>........</a></li>
+							</ul>
+						</div>
+						<div class="be-drop-down">
+							<i class="icon-features"></i>
+							<span class="be-dropdown-content">Materia
+							</span>
+							<ul class="drop-down-list">
+								<li class="filter" data-filter=".category-2"><a>........</a></li>
+								<li class="filter" data-filter=".category-3"><a>........</a></li>
+								<li class="filter" data-filter=".category-4"><a>........</a></li>
+								<li class="filter" data-filter=".category-5"><a>........</a></li>
+								<li class="filter" data-filter=".category-1"><a>........</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="custom-container gallery-container">
+			<div class="container">
+				<div class="gallery-box clearfix">
+					<a class="gallery-a" href="/blog-3/"><img src="{% static 'img/gallery-img-1.png' %}" alt="img"></a>
+					<div class="gallery-info">
+						<h3>Redes y servidores</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto aut corporis cumque dignissimos eos exercitationem facere labore labori.</p>
+					</div>
+					<div class="gallery-btn">
+						
+						<a class="btn-login btn color-1 size-2 hover-2" href="#">
+							UNIRSE
+						</a>
+					</div>
+				</div>
+				<div class="gallery-box clearfix">
+					<a class="gallery-a" href="/blog-3/"><img src="{% static 'img/gallery-img-2.png' %}" alt="img"></a>
+					<div class="gallery-info">
+						<h3>Costos empresariales</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto aut corporis cumque dignissimos eos exercitationem facere labore labori.</p>
+					</div>
+					<div class="gallery-btn">
+						
+						<a class="btn-login btn color-1 size-2 hover-2" href="#">
+							UNIRSE
+						</a>
+					</div>
+				</div>
+				<div class="gallery-box clearfix">
+					<a class="gallery-a" href="/blog-3/"><img src="{% static 'img/gallery-img-3.png' %}" alt="img"></a>
+					<div class="gallery-info">
+						<h3>Python conceptos básicos</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto aut corporis cumque dignissimos eos exercitationem facere labore labori.</p>
+					</div>
+					<div class="gallery-btn">
+						
+						<a class="btn-login btn color-1 size-2 hover-2" href="#">
+							UNIRSE
+						</a>
+					</div>
+				</div>
+				<div class="gallery-box clearfix">
+					<a class="gallery-a" href="/blog-3/"><img src="{% static 'img/gallery-img-4.png' %}" alt="img"></a>
+					<div class="gallery-info">
+						<h3>Química orgánica</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto aut corporis cumque dignissimos eos exercitationem facere labore labori.</p>
+					</div>
+					<div class="gallery-btn">
+						
+						<a class="btn-login btn color-1 size-2 hover-2" href="#">
+							UNIRSE
+						</a>
+					</div>
+				</div>
+				<div class="gallery-box clearfix">
+					<a class="gallery-a" href="/blog-3/"><img src="{% static 'img/gallery-img-5.png' %}" alt="img"></a>
+					<div class="gallery-info">
+						<h3>Microorganismos</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto aut corporis cumque dignissimos eos exercitationem facere labore labori.</p>
+					</div>
+					<div class="gallery-btn">
+						
+						<a class="btn-login btn color-1 size-2 hover-2" href="#">
+							UNIRSE
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}

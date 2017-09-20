@@ -1,0 +1,355 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content%}
+<body style="overflow-x: hidden;">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- MAIN CONTENT -->
+	<div id="content-block" class="work-box">
+		<div class="editor-menu">
+			<div class="container">
+				<ul class="editor-nav">
+					<li id="content-w" class="en-nav active">1. Tutoría</li>
+					<li id="cover-w" class="en-nav">2. Imagen</li>
+					<li id="setting-w" class="en-nav">3. Contenido</li>
+				</ul>
+				<div class="buttons-navbar">
+					<button type="button" class="btn btn-default">Atras</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+					<button type="button" class="btn btn-success">Siguiente</button>
+				</div>
+			</div>
+		</div>
+		<div class="work-area">
+			<div class="cover-popup">
+				<div class="cover-box">
+					<form action="#">
+						<img src="https://mir-s3-cdn-cf.behance.net/projects/202/b252d929064253.55e0104b21931.png" style="width: 202px; height: 158px;" alt="">
+						<textarea placeholder="Title Project"></textarea>
+					</form>
+					<a href="#" class="anothel-upload"><i class="fa fa-cloud-upload"></i> Agregar una nueva imagen</a>
+					<input class="file" type="file"/>
+					<br>
+					<div class="btn-row">
+						<button type="button" class="btn btn-primary">Cancelar</button>
+						<button type="button" class="btn btn-success">Continuar</button>
+					</div>
+				</div>
+			</div>
+			<div class="setting-popup">
+				<div class="cover-box s-cover-box">
+					<div class="setting-form">
+						<form>
+							<div class="form-group">
+								<label for="in1">Nombre de la asesoría</label>
+								<input type="text" class="form-control" id="in1">
+							</div>
+							<div class="form-group">
+								<label >Descipción</label>
+								<textarea ></textarea>
+							</div>
+							<div class="form-group">
+								<label style="" >Email address</label>
+								<textarea ></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="setting-block">
+						<div class="settings-row cfix">
+							<div class="left settings-label">Temario:</div>
+							<div class="left settings-option">
+								<div class="settings-sub-option cfix">
+									<div class="left settings-note st-label">
+										<span class="grey"> 1. Historia de java</a></span>
+									</div>
+									<div class="left settings-note st-label">
+										<span class="grey">2. Conceptos básicos </span>
+									</div>
+									<div class="left settings-note st-label">
+										<span class="grey">3. Variables</span>
+									</div>
+									<div class="left settings-note st-label">
+										<span class="grey">4. Aplicación</span>
+									</div>
+									<div class="right fake-link" id="add-brand">+ Agregar</div>
+								</div>
+
+		
+							</div>
+							<div class="left settings-label">Herramientas a utilizar:</div>
+							<div class="left settings-option">
+								<div class="settings-sub-option cfix">
+									<div class="left settings-note st-label">
+										<span class="grey">Neatbeans</span>
+									</div>
+									<div class="left settings-note st-label">
+										<span class="grey"> JDK</span>
+									</div>
+									
+									<div class="right fake-link" id="tools">+ agregar</div>
+								</div>
+							</div>
+							<div class="left settings-label">Tiempo:</div>
+							<div class="left settings-option">
+								<div class="settings-sub-option cfix">
+									<div class="left settings-note st-label">
+										<input type="text" class="form-control" id="in1" placeholder="Dias" style="width: 30%;">
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup-buttons right-buttons">
+						<button type="button" class="btn btn-primary">Guardar cambios</button>
+						<button type="button" class="btn btn-success">Publicar</button>
+					</div>
+				</div>
+			</div>
+			<div class="container be-detail-container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 st-col left-feild">
+						<div class="be-vidget behance-style" >
+							<h3 class="letf-menu-article">
+								Herramientas
+							</h3>
+							<div class="creative_filds_block">
+								<ul class="ul nav b-work-list">
+									
+									<li id="media" ><a onclick="desaparecer('chat');" href="#"><i class="fa fa-pencil-square-o"></i>Chat</a></li>
+									<li ><a href="#" ><i class="fa fa-cloud"></i>Videollamada</a></li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="be-vidget  behance-style">
+							<h3 class="letf-menu-article">
+								Temario
+							</h3>
+							<div class="creative_filds_block">
+								<ul class="ul nav b-work-list b-work-list-no">
+									<li ><a class="open-custom" href="#">Temario <i class="fa fa-chevron-down"></i></a>
+										<div class="inner-filter-info">
+											<div class="inner-filter-inner inner-d">
+												
+												<span onclick="desaparecer('tema1')">1. Historia</span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>2. Conceptos básicos</span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>3. Variables </span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>4. Aplicación </span>
+											</div>
+
+											
+										
+											
+										</div>
+									</li>
+
+									<li >
+
+										<a class="open-custom" href="#">Pruevas <i class="fa fa-chevron-down"></i></a>
+										<div class="inner-filter-info">
+											<div class="inner-filter-inner inner-d">
+												
+												<span>1. Historia</span> 
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>2. Conceptos básicos</span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>3. Variables </span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>4. Aplicación </span>
+											</div>
+
+
+									</li>
+									<li >
+
+										<a class="open-custom" href="#">Herramientas <i class="fa fa-chevron-down"></i></a>
+										<div class="inner-filter-info">
+											<div class="inner-filter-inner inner-d">
+												
+												<span>1. Neatbeans</span>
+											</div>
+											<div class="inner-filter-inner inner-d">
+												
+												<span>2. JDK</span>
+											</div>
+											
+
+
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-md-9 _editor-content_"  >
+						<div class="sec"  data-sec="basic-information" id="tema1" style="display: none;">
+							<div class="be-large-post large-area">
+								
+								<div class="info-block style-2">
+									<div class="be-large-post-align "><h3 class="info-block-label">Historia</h3></div>
+								</div>
+
+								
+
+								<div class="be-large-post-align">
+									<div class="upload-zone">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						
+						<!-- Chat -->
+						
+						<div class="container bootstrap snippet" id="chat" style="max-width: 1200px; max-height: 450px; margin-left: 100px;  overflow-y: scroll; overflow-x: hidden;">
+						    <div class="row">
+														        
+						        <!--=========================================================-->
+						        <!-- selected chat -->
+						    	<div class="col-md-8 bg-white ">
+						            <div class="chat-message">
+						                <ul class="chat">
+						                    <li class="left clearfix">
+						                    	<span class="chat-img pull-left">
+						                    		<img src="{% static 'img/perfiles/rico.jpg' %}" alt="User Avatar">
+						                    	</span>
+						                    	<div class="chat-body clearfix">
+						                    		<div class="header">
+						                    			<strong class="primary-font">Fernando</strong>
+						                    			<small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+						                    		</div>
+						                    		<p>
+						                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						                    		</p>
+						                    	</div>
+						                    </li>
+						                    <li class="right clearfix">
+						                    	<span class="chat-img pull-right">
+						                    		<img src="{% static 'img/perfiles/hector.jpg' %}" alt="User Avatar">
+						                    	</span>
+						                    	<div class="chat-body clearfix">
+						                    		<div class="header">
+						                    			<strong class="primary-font">Hector</strong>
+						                    			<small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+						                    		</div>
+						                    		<p>
+						                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
+						                    		</p>
+						                    	</div>
+						                    </li>
+						                    <li class="left clearfix">
+						                        <span class="chat-img pull-left">
+						                    		<img src="{% static 'img/perfiles/rico.jpg' %}" alt="User Avatar">
+						                    	</span>
+						                    	<div class="chat-body clearfix">
+						                    		<div class="header">
+						                    			<strong class="primary-font">Fernando</strong>
+						                    			<small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+						                    		</div>
+						                    		<p>
+						                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						                    		</p>
+						                    	</div>
+						                    </li>
+						                    <li class="right clearfix">
+						                        <span class="chat-img pull-right">
+						                    		<img src="{% static 'img/perfiles/hector.jpg' %}" alt="User Avatar">
+						                    	</span>
+						                    	<div class="chat-body clearfix">
+						                    		<div class="header">
+						                    			<strong class="primary-font">Hector</strong>
+						                    			<small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+						                    		</div>
+						                    		<p>
+						                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
+						                    		</p>
+						                    	</div>
+						                    </li>                    
+						                    <li class="left clearfix">
+						                        <span class="chat-img pull-left">
+						                    		<img src="{% static 'img/perfiles/rico.jpg' %}" alt="User Avatar">
+						                    	</span>
+						                    	<div class="chat-body clearfix">
+						                    		<div class="header">
+						                    			<strong class="primary-font">Fernando</strong>
+						                    			<small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+						                    		</div>
+						                    		<p>
+						                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						                    		</p>
+						                    	</div>
+						                    </li>
+						                   
+						                                    
+						                </ul>
+						            </div>
+						              
+							</div>
+						</div><br><br>
+
+
+
+
+					</div>
+
+					<div class="chat-box bg-white" id="chatbox">
+						            	<div class="input-group">
+						            		<div class="form-group focus-2">
+						            			<br><br>
+																			
+											<input style="margin-left: 110px; max-width: 680px;" class="form-input" type="text">
+										</div>
+						            		
+						            		<span class="input-group-btn">
+						            			<button style="font-size: 10px" class="btn color-1 hover-1" type="button">Enviar</button>
+						            		</span>
+						            	</div><!-- /input-group -->	
+						            </div>            
+								</div>      
+
+					
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPT	-->
+	<script src="{% static 'script/charts.js' %}"></script>
+	<script type="text/javascript">
+		
+		function desaparecer(element) {
+			if (element=='tema1') {
+				document.getElementById(element).style.display = 'block';
+				document.getElementById('chat').style.display = 'none';
+				document.getElementById('chatbox').style.display = 'none';
+				}
+			if(element=='chat'){
+				document.getElementById(element).style.display = 'block';
+				document.getElementById('chatbox').style.display = 'block';
+				document.getElementById('tema1').style.display = 'none';
+			}
+		}
+	</script>
+
+{% endblock %}	
